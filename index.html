@@ -11,11 +11,7 @@
         .chord {
             fill-opacity: .67;
         }
-        
-        .owner-link {
-            text-align: right;
-        }
-        
+             
         .chord-diagram-title {
             text-align: center;
         }
@@ -29,12 +25,14 @@
             /*display: none;*/
             opacity: 0.3;
         }
+		#legend {
+			text-align: left;
+		}
     </style>
 </head>
 
 <body>
-    <h1 class="owner-link"><a href="https://www.geogecko.com/">Built by Geo Gecko</a></h1>
-    <h2 class="chord-diagram-title">Refugees in Uganda- by District and Country of Origin</h2>
+    <h2 class="chord-diagram-title">Refugees in Uganda - by District and Country of Origin</h2>
     <div id="chord-diagram-wrapper"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
@@ -177,6 +175,8 @@
 
         d3.select(self.frameElement).style("height", outerRadius * 2 + "px");
     </script>
+	<h5 class="chord-diagram-title"><a href="https://www.ugandarefugees.org/">Data from UNHCR Uganda</a></h5>
+	<h1 class="legend"><a href="https://www.geogecko.com/"><img src="https://static1.squarespace.com/static/57d7d359f5e231039ee21253/t/57e4e57420099e0d7a7b9181/1496765642629/?format=1500w" alt="Geo Gecko"></a></h1>
 </body>
 
 </html>
